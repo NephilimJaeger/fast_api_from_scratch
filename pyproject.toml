@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "fast-api-from-scratch"
+version = "0.1.0"
+description = "This project was made when i was studying FastAPI"
+authors = ["Nilane Arruda"]
+readme = "README.md"
+packages = [{include = "fast_api_from_scratch"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = {extras = ["all"], version = "^0.103.1"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
