@@ -17,7 +17,7 @@ def get_all_products():
     200:{
         "content":{
             "text/html":{
-                "<div>Product</div>"
+                "example":"<div>Product</div>"
             }
         },
         "description": "Returns the HTML for an object"
@@ -25,7 +25,7 @@ def get_all_products():
     404:{
         "content":{
             "text/plain":{
-                "Product not available"
+                "example":"Product not available"
             }
         },
         "description": "A cleartext error message"
