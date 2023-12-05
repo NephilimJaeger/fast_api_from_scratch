@@ -1,9 +1,6 @@
 from fastapi import FastAPI, Request
-from router import blog_get
-from router import blog_post
-from router import user
-from router import article
-from router import product
+from router import blog_get, blog_post, user, article, product
+from auth import authetication
 from database import models
 from database.db import engine
 from exceptions import StoryException
@@ -12,6 +9,7 @@ from fastapi.exceptions import HTTPException
 
 
 app = FastAPI()
+app.include_router(authetication.router)
 app.include_router(blog_get.router)
 app.include_router(blog_post.router)
 app.include_router(user.router)
