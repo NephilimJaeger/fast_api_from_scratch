@@ -18,5 +18,3 @@ def get_uploadfile(upload_file:UploadFile = File(...)):
 
     return {'filename':path,
             'type': upload_file.content_type}
-
-@router.get('')
